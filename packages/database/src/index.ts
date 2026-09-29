@@ -1,2 +1,1 @@
-// Database layer placeholder.
-export const databaseName = 'Tamilan Pride Database';
+export { prisma, connectDatabase, disconnectDatabase } from './client';

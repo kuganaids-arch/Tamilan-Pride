@@ -1,1 +1,29 @@
-export const DISCORD_INTENTS = [\n  'Guilds',\n  'GuildMembers',\n  'GuildBans',\n  'GuildEmojisAndStickers',\n  'GuildIntegrations',\n  'GuildWebhooks',\n  'GuildInvites',\n  'GuildVoiceStates',\n  'GuildPresences',\n  'GuildMessages',\n  'GuildMessageReactions',\n  'GuildMessageTyping',\n  'DirectMessages',\n  'DirectMessageReactions',\n  'DirectMessageTyping',\n  'MessageContent',\n  'GuildScheduledEvents'\n] as const;\n\nexport const DISCORD_PARTIALS = ['Channel', 'Message', 'User', 'GuildMember', 'Reaction'] as const;\n\nexport const COOLDOWN_TIMES = {\n  DEFAULT: 3000, // 3 seconds\n  MODERATION: 1000, // 1 second\n  LEVELING: 60000 // 1 minute\n} as const;\n\nexport const DEFAULT_PREFIX = '/';\nexport const BOT_NAME = 'Tamilan Pride';\nexport const BOT_VERSION = '1.0.0';\n"
+export const DISCORD_INTENTS = [
+  'Guilds',
+  'GuildMembers',
+  'GuildBans',
+  'GuildEmojisAndStickers',
+  'GuildIntegrations',
+  'GuildInvites',
+  'GuildVoiceStates',
+  'GuildMessages',
+  'GuildMessageReactions',
+  'GuildMessageTyping',
+  'DirectMessages',
+  'DirectMessageReactions',
+  'DirectMessageTyping',
+  'MessageContent',
+  'GuildScheduledEvents'
+] as const;
+
+export const DISCORD_PARTIALS = ['Channel', 'Message', 'User', 'GuildMember', 'Reaction'] as const;
+
+export const DEFAULT_PREFIX = '/';
+export const BOT_NAME = 'Tamilan Pride';
+export const BOT_VERSION = '1.0.0';
+
+export const COOLDOWN_TIMES = {
+  DEFAULT: 3000,
+  MODERATION: 1000,
+  LEVELING: 60000
+} as const;
