@@ -1,0 +1,28 @@
+# Node
+node_modules
+.npm
+
+# Production
+.env
+.env.local
+.env.*.local
+
+# Build
+.next
+out
+dist
+coverage
+
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo

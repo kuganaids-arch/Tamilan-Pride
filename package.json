@@ -1,0 +1,29 @@
+{
+  "name": "tamilan-pride-discord-bot",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @tamilanpride/bot",
+    "dev:api": "npm run dev --workspace @tamilanpride/api",
+    "dev:dashboard": "npm run dev --workspace @tamilanpride/dashboard",
+    "build": "npm run build --workspace @tamilanpride/bot && npm run build --workspace @tamilanpride/api && npm run build --workspace @tamilanpride/dashboard",
+    "lint": "eslint .",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:studio": "prisma studio"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "eslint": "^9.15.0",
+    "typescript": "^5.7.2",
+    "prisma": "^6.1.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

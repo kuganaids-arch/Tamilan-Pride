@@ -1,0 +1,13 @@
+{
+  "name": "@tamilanpride/database",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.1.0"
+  }
+}
